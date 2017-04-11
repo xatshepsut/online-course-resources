@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+    $(document).ready(function() {
+      // Accordion setup
+      var accordionProperties = {
+        active: false,
+        collapsible: true,
+        heightStyle: "content"
+      }
+      $('.section-accordion').accordion(accordionProperties);
+      $('.subsection-accordion').accordion(accordionProperties);
+
+      // Open links in new tab
+      $('a').attr('target', '_blank');
+    });
+  </script>
+</head>
+<body>
+  <div class="section-accordion">
+    <h1>Getting Started with HTML and CSS</h1>
+    <div class="subsection-accordion">
+      <h2>Front-end Foundations</h2>
+      <section>
+        <h3><a href="CodeSchool_Frontend_Foundations.pdf">Slides</a></h3>
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML - MDN</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS - MDN</a></li>
+          <li><a href="http://learn.shayhowe.com/">Shay Howe's Learn to Code HTML &amp; CSS</a></li>
+          <li><a href="http://codepen.io">CodePen</a></li>
+        </ul>
+      </section>
+
+      <h2>Front-end Formations</h2>
+      <section>
+        <h3><a href="CodeSchool_Frontend_Formations.pdf">Slides</a></h3>
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="http://html5doctor.com/">HTML5 Doctor</a></li>
+          <li><a href="http://html5boilerplate.com/">HTML5 Boilerplate</a></li>
+          <li><a href="http://codepen.io/">CodePen</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/">Mozilla Developer Network - MDN</a></li>
+          <li><a href="http://caniuse.com/">Can I Use?</a></li>
+          <li><a href="http://coding.smashingmagazine.com/2011/08/16/html5-and-the-document-outlining-algorithm/">HTML5 And The Document Outlining Algorithm</a></li>
+          <li><a href="http://www.fontspring.com/blog/the-new-bulletproof-font-face-syntax">The New Bulletproof @Font-Face Syntax</a></li>
+          <li><a href="http://gsnedders.html5.org/outliner/">HTML5 Outliner</a></li>
+          <li><a href="https://chrome.google.com/webstore/detail/html5-outliner/afoibpobokebhgfnknfndkgemglggomo">HTML5 Outliner Chrome Extension</a></li>
+          <li><a href="http://demo.agektmr.com/datalist/">Datalist Experiment</a></li>
+          <li><a href="http://codepen.io/bphillips201/details/JygKB">Box-Shadow Demonstration</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function">transition-timing-function - MDN</a></li>
+          <li><a href="https://github.com/ai/autoprefixer">Autoprefixer</a></li>
+          <li><a href="http://kapeli.com/dash">Dash</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions">JavaScript Regular Expressions - MDN</a></li>
+          <li><a href="https://github.com/codeschool/FrontEndFormationsBlog">Art Gallery Blog Source</a></li>
+        </ul>
+      </section>
+    </div>
+
+    <h1>Intermediate CSS</h1>
+    <div class="subsection-accordion">
+      <h2>CSS Cross-Country</h2>
+      <section>
+        <h3><a href="CodeSchool_CSS_Cross-Country.pdf">Slides</a></h3>
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="https://developer.mozilla.org/en/CSS_Reference">MDN CSS Reference</a></li>
+          <li><a href="http://css-tricks.com/">CSS-Tricks</a></li>
+          <li><a href="http://html5boilerplate.com/">HTML5 Boilerplate</a></li>
+          <li><a href="http://lesscss.org/">LESS</a></li>
+          <li><a href="http://sass-lang.com/">Sass</a></li>
+          <li><a href="http://www.peachpit.com/store/product.aspx?isbn=0321808355">Bulletproof Web Design</a></li>
+          <li><a href="http://www.abookapart.com/">A Book Apart</a></li>
+          <li><a href="http://trac.webkit.org/wiki/WebInspector">Webkit Web Inspector</a></li>
+          <li><a href="http://getfirebug.com/">Firebug</a></li>
+          <li><a href="https://www.smashingmagazine.com/2009/08/taming-advanced-css-selectors/">Taming Advanced CSS Selectors</a></li>
+          <li><a href="http://oli.jp/2011/ids/">Don’t use IDs in CSS selectors?</a></li>
+          <li><a href="https://html5boilerplate.com/">HTML5 BOILERPLATE</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index">Understanding z index</a></li>
+          <li><a href="http://www.w3.org/TR/CSS2/box.html#collapsing-margins">Collapsing margins</a></li>
+          <li><a href="http://meyerweb.com/eric/tools/css/reset/">Reset CSS</a></li>
+          <li><a href="http://necolas.github.io/normalize.css/">Normalize.css</a></li>
+          <li><a href="http://clagnut.com/sandbox/imagetest">Image test</a></li>
+          <li><a href="http://www.spritecow.com/">www.spritecow.com</a></li>
+          <li><a href="http://davidbcalhoun.com/2011/when-to-base64-encode-images-and-when-not-to/">When to Base64 Encode Images (and When Not To)</a></li>
+          <li><a href="https://css-tricks.com/pseudo-class-selectors/">Meet the Pseudo Class Selectors</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">CSS reference - MDN</a></li>
+          <li><a href="https://css-tricks.com/pseudo-element-roundup/">A Whole Bunch of Amazing Stuff Pseudo Elements Can Do</a></li>
+        </ul>
+      </section>
+
+      <h2>Journey Into Mobile</h2>
+      <section>
+        <h3><a href="CodeSchool_Journey_into_Mobile.pdf">Slides</a></h3>
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="http://www.abookapart.com/products/responsive-web-design">Responsive Web</a></li>
+          <li><a href="http://adaptivewebdesign.info/1st-edition/">Adaptive Web Design</a></li>
+          <li><a href="http://ami.responsivedesign.is/">Am I Responsive?</a></li>
+          <li><a href="http://www.markboulton.co.uk/">The Personal Disquiet of Mark Boulton</a></li>
+          <li><a href="http://futurefriend.ly/resources.html">Future Friendly Resources</a></li>
+          <li><a href="http://www.lukew.com/">LukeW Ideation + Design</a></li>
+          <li><a href="http://mediaqueri.es/">Media Queries</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag">Viewport Meta Tag</a></li>
+          <li><a href="http://courseware.codeschool.com.s3.amazonaws.com/journey_into_mobile/TheLostWorld.zip">Example Source Code: The Lost World</a></li>
+        </ul>
+      </section>
+
+      <h2>Unmaskin HTML Emails</h2>
+      <section>
+        <h3><a href="CodeSchool_Unmasking_HTML_Emails.pdf">Slides</a></h3>
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="https://litmus.com/signup/coupon/codeschool">Litmus - 14-Day Free Trial</a></li>
+          <li><a href="http://buttons.cm">Bulletproof Buttons for Email</a></li>
+          <li><a href="https://www.campaignmonitor.com/css">CSS Support Guide for Email</a></li>
+          <li><a href="https://litmus.com/builder/7f28329">Slides Email</a></li>
+          <li><a href="https://litmus.com/builder/369cfaf">Challenges Email</a></li>
+          <li><a href="https://litmus.com/builder">Litmus Builder</a></li>
+          <li><a href="https://litmus.com/community">Litmus Community</a></li>
+          <li><a href="https://litmus.com/scope/dashboard">Litmus Scope</a></li>
+          <li><a href="http://responsiveemailresources.com">Responsive Email Resources</a></li>
+          <li><a href="http://responsiveemailpatterns.com">Responsive Email Patterns</a></li>
+          <li><a href="http://emailclientmarketshare.com">Email Client Market Share</a></li>
+        </ul>
+      </section>
+
+      <h2>Adventures in Web Animations</h2>
+      <section>
+        <h3><a href="CodeSchool_Adventures_In_Web_Animations.pdf">Slides</a></h3>
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="https://css-tricks.com/almanac/properties/t/transition-timing-function/">CSS Tricks: Timing Functions</a></li>
+          <li><a href="http://codepen.io/alyssamichelle/pen/GJmpPb?editors=110">Playing with Timing Functions on CodePen</a></li>
+          <li><a href="http://cubic-bezier.com/#.84,.17,.33,.94">Cubicbezier.com</a></li>
+          <li><a href="http://www.smashingmagazine.com/2014/04/understanding-css-timing-functions/">Smashing Magazine: Understanding Timing Functions</a></li>
+          <li><a href="https://css-tricks.com/guide-svg-animations-smil/">A Guide to CSS Animations</a></li>
+          <li><a href="http://pleeease.io/play/">Paste to Prefix</a></li>
+          <li><a href="http://caniuse.com/">Can I Use</a></li>
+          <li><a href="https://www.codeschool.com/courses/you-me-svg">You, Me &amp; SVG Course</a></li>
+        </ul>
+      </section>
+    </div>
+
+    <h1>CSS Preprocessors</h1>
+    <div class="subsection-accordion">
+      <h2>Assembling Sass</h2>
+      <section>
+        <h3><a href="CodeSchool_Assembling_Sass.pdf">Slides</a></h3>
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="http://sass-lang.com">Sass website</a></li>
+          <li><a href="http://incident57.com/codekit/">CodeKit</a></li>
+          <li><a href="http://livereload.com/">LiveReload</a></li>
+          <li><a href="http://middlemanapp.com/">Middleman</a></li>
+          <li><a href="http://mhs.github.com/scout-app/">Scout</a></li>
+          <li><a href="http://thesassway.com/">The Sass Way</a></li>
+          <li><a href="http://chriseppstein.github.com/blog/">Chris Eppstein's Blog</a></li>
+          <li><a href="http://vimeo.com/24278115">Kicking Ass + Taking Names with Sass &amp; Compass by Nathan Henderson</a></li>
+          <li><a href="http://css-tricks.com/sass-vs-less/">CSS Tricks — Sass vs. Less</a></li>
+          <li><a href="http://compass-style.org/">Compass website</a></li>
+        </ul>
+      </section>
+
+      <h2>Assembling Sass 2</h2>
+      <section>
+        <h3><a href="CodeSchool_Assembling_Sass_2.pdf">Slides</a></h3>
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="http://incident57.com/codekit">CodeKit</a></li>
+          <li><a href="http://mhs.github.com/scout-app">Scout</a></li>
+          <li><a href="http://compass.handlino.com">Compass.app</a></li>
+          <li><a href="http://fireapp.handlino.com">Fire.app</a></li>
+          <li><a href="http://mixture.io">Mixture</a></li>
+          <li><a href="http://susy.oddbird.net">Susy</a></li>
+          <li><a href="http://css-tricks.com/examples/IconFont">Icon Fonts are Awesome</a></li>
+          <li><a href="https://gist.github.com/4232779">Auto Hi-res Sprites</a></li>
+          <li><a href="http://bourbon.io/">Bourbon</a></li>
+        </ul>
+      </section>
+    </div>
+
+    <h1>Design</h1>
+    <div class="subsection-accordion">
+      <h2>Fundamentals of Design</h2>
+      <section>
+        <h3><a href="CodeSchool_Fundamentals_of_Design.pdf">Slides</a></h3>
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="http://www.smashingmagazine.com/category/design/">Smashing Magazine Design</a></li>
+          <li><a href="http://www.netmagazine.com/">Net Magazine</a></li>
+          <li><a href="http://hackdesign.org/">Hack Design</a></li>
+          <li><a href="http://www.thinkingwithtype.com/">Thinking with Type</a></li>
+          <li><a href="http://www.amazon.com/Elements-Typographic-Style-Robert-Bringhurst/dp/0881792063">The Elements of Typographic Style</a></li>
+          <li><a href="http://www.pearsonified.com/typography/">Typography Calculator</a></li>
+          <li><a href="http://www.smashingmagazine.com/2010/01/28/color-theory-for-designers-part-1-the-meaning-of-color/">Color Theory for Designers</a></li>
+          <li><a href="https://kuler.adobe.com/create/color-wheel/">Adobe Kuler Color Wheel</a></li>
+          <li><a href="http://www.workwithcolor.com/color-converter-01.htm">Working with Color</a></li>
+          <li><a href="http://webdesign.tutsplus.com/articles/design-theory/understanding-the-z-layout-in-web-design/">Understanding Z layout</a> and <a href="http://webdesign.tutsplus.com/articles/design-theory/understanding-the-f-layout-in-web-design/">Understanding F-layout</a></li>
+          <li><a href="http://gridpak.com/">Responsive Grid Generator</a></li>
+          <li><a href="http://www.ravelrumba.com/photoshop-grids/">Photoshop Grids</a></li>
+        </ul>
+      </section>
+
+      <h2>The Elements of Web Design</h2>
+      <section>
+        <h3><a href="CodeSchool_The_Elements_of_Web_Design.pdf">Slides</a></h3>
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="http://www.amazon.com/Sprint-Solve-Problems-Test-Ideas/dp/150112174X">Sprint</a></li>
+          <li><a href="http://www.amazon.com/Lean-UX-Applying-Principles-Experience/dp/1449311652/ref=sr_1_1?ie=UTF8&amp;qid=1463147498&amp;sr=8-1&amp;keywords=lean+ux">Lean UX</a></li>
+          <li><a href="http://www.amazon.com/Dont-Make-Think-Revisited-Usability/dp/0321965515/ref=sr_1_1?ie=UTF8&amp;qid=1463147481&amp;sr=8-1&amp;keywords=krug+don%27t+make+me+think">Don’t Make Me Think</a></li>
+          <li><a href="http://www.usability.gov/">Usability.gov</a></li>
+          <li><a href="http://www.uxbooth.com/">Uxbooth.com</a></li>
+          <li><a href="https://www.nngroup.com/articles/">Nngroup.com</a></li>
+          <li><a href="https://www.pluralsight.com/courses/ux-tips-tricks-developers">User Experience Tips and Tricks for Developers</a></li>
+        </ul>
+      </section>
+    </div>
+
+    <h1>SVG</h1>
+    <div class="subsection-accordion">
+      <h2>You, Me &amp; SVG</h2>
+      <section>
+        <h3><a href="CodeSchool_You_Me_Svg.pdf">Slides</a></h3>
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="http://delicious.com/alyssamichelle/SVG">Resource Master List</a></li>
+          <li><a href="http://thenewcode.com/1026/Making-SVG-Accessible">Making SVG Accessible</a></li>
+          <li><a href="https://css-tricks.com/clipping-masking-css/">Clipping &amp; Masking (CSS Tricks)</a></li>
+          <li><a href="https://bigbitecreative.com/introduction-svg-animation/">An Introduction to SVG Animation</a></li>
+        </ul>
+      </section>
+    </div>
+
+    <h1>JavaScript</h1>
+    <div class="subsection-accordion">
+      <h2>JavaScript Road Trip Part 1</h2>
+      <section>
+        <h3><a href="CodeSchool_JavaScript_Road_Trip_1.pdf">Slides</a></h3>
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="http://www.impressivewebs.com/javascript-string-methods-reference/">Useful Methods for Strings</a></li>
+          <li><a href="http://www.javascriptkit.com/jsref/escapesequence.shtml">Special Characters and Escape Sequences</a></li>
+          <li><a href="http://appcropolis.com/blog/web-technology/organize-html-css-javascript-files/">File Organization with HTML, CSS, and JavaScript Files</a></li>
+        </ul>
+      </section>
+
+      <h2>JavaScript Road Trip Part 2</h2>
+      <section>
+        <h3><a href="CodeSchool_JavaScript_Road_Trip_2.pdf">Slides</a></h3>
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="http://www.impressivewebs.com/javascript-string-methods-reference/">Useful Methods for Strings</a></li>
+          <li><a href="http://www.javascriptkit.com/jsref/escapesequence.shtml">Special Characters and Escape Sequences</a></li>
+          <li><a href="http://appcropolis.com/blog/web-technology/organize-html-css-javascript-files/">File Organization with HTML, CSS, and JavaScript Files</a></li>
+          <li><a href="http://eloquentjavascript.net/">Eloquent Javascript</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">Javascript - MDN</a></li>
+          <li><a href="http://jsfiddle.net/">JSFiddle</a></li>
+          <li><a href="http://dailyjs.com/">DailyJS</a></li>
+        </ul>
+      </section>
+
+      <h2>JavaScript Road Trip Part 3</h2>
+      <section>
+        <h3><a href="CodeSchool_JavaScript_Road_Trip_3.pdf">Slides</a></h3>
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Closures">Closures at the MDN</a></li>
+          <li><a href="http://javascriptweblog.wordpress.com/2010/06/07/understanding-javascript-prototypes/">Prototypes at "JavaScript, JavaScript..."</a></li>
+          <li><a href="http://eloquentjavascript.net/chapter8.html">OOP at "Eloquent Javascript"</a></li>
+        </ul>
+      </section>
+
+      <h2>ES2015: The Shape of JavaScript to Come</h2>
+      <section>
+        <h3><a href="CodeSchool_ES2015_The_Shape_of_JavaScript_to_Come.pdf">Slides</a></h3>
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="https://leanpub.com/understandinges6">Understanding ES6</a></li>
+          <li><a href="https://www.nczonline.net/">NCZOnline</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">MDN - JavaScript</a></li>
+          <li><a href="https://fivejs.codeschool.com/">Five Minutes of JavaScript</a></li>
+          <li><a href="http://babeljs.io/">BabelJS</a></li>
+          <li><a href="https://www.codeschool.com/screencasts/es2015-with-babel">Code TV: ES2015 With Babel</a></li>
+          <li><a href="https://www.codeschool.com/screencasts/es2015-with-babel-and-gulp">Code TV: ES2015 With Babel and Gulp</a></li>
+          <li><a href="https://www.codeschool.com/discuss/c/javascript/es-2015">Code School Forum</a></li>
+        </ul>
+      </section>
+    </div>
+
+    <h1>jQuery</h1>
+    <div class="subsection-accordion">
+      <h2>Try jQuery</h2>
+      <section>
+        <h3><a href="CodeSchool_Try_jQuery.pdf">Slides</a></h3>
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="https://github.com/codeschool/jQueryReturnFlightDemos">Source Code Demo</a></li>
+          <li><a href="http://jquery.com/">jQuery</a></li>
+          <li><a href="http://learn.jquery.com/">Learn jQuery</a></li>
+          <li><a href="http://api.jquery.com/">jQuery API Documentation</a></li>
+          <li><a href="http://jsbin.com/">JS Bin</a></li>
+          <li><a href="http://jsfiddle.net/">jsFiddle</a></li>
+          <li><a href="http://blog.jquery.com/">jQuery Blog</a></li>
+          <li><a href="http://caniuse.com/css-transitions">Can i use CSS3 Transitions?</a></li>
+        </ul>
+      </section>
+
+      <h2>jQuery: The Return Flight</h2>
+      <section>
+        <h3><a href="CodeSchool_jQuery_Return_Flight.pdf">Slides</a></h3>
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="https://github.com/codeschool/jQueryReturnFlightDemos">Source Code Demo</a></li>
+          <li><a href="http://jquery.com/">jQuery</a></li>
+          <li><a href="http://api.jquery.com/jQuery.ajax/">jQuery Ajax Documentation</a></li>
+          <li><a href="http://api.jquery.com/">jQuery API Documentation</a></li>
+          <li><a href="http://learn.jquery.com/plugins/advanced-plugin-concepts/">Advanced Plugin Concepts</a></li>
+          <li><a href="http://joseoncode.com/2011/09/26/a-walkthrough-jquery-deferred-and-promise/">Understanding JQuery.Deferred and Promise</a></li>
+        </ul>
+      </section>
+    </div>
+
+  </div>
+</body>
+</html>

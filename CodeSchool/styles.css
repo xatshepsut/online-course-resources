@@ -1,0 +1,76 @@
+body {
+  font-family: Arial;
+}
+
+a, h3 {
+  color: #6499BF;
+  font-weight: 700;
+  text-decoration: none;
+}
+a:hover {
+  color: #9DC4E0;
+}
+
+ul {
+  list-style: none;
+  padding-left: 30px;
+}
+li {
+  position: relative;
+}
+li::before {
+  content: "\2666"; 
+  color: #6499BF;
+  position: absolute;
+  left: -20px;
+}
+
+.ui-accordion-header {
+  padding: 10px;
+  border-radius: 5px;
+  color: #757035;
+  background-color: #FFFFFF;
+  outline: none;
+}
+.ui-accordion-header-active {
+  border-radius: 5px 5px 0px 0px;
+  margin-bottom: 0px;
+}
+
+.ui-accordion-content {
+  padding: 0px 15px 15px;
+}
+.ui-accordion-content-active {
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.section-accordion .ui-accordion-header {
+  color: #516F85;
+}
+.section-accordion .ui-accordion-header-active {
+  color: #FFFFFF;
+  background-color: #516F85;
+}
+.section-accordion .ui-accordion-content {
+  border-color: white #516F85 #516F85;
+}
+
+.subsection-accordion .ui-accordion-header {
+  color: #6499BF;
+}
+.subsection-accordion .ui-accordion-header-active {
+  color: #FFFFFF;
+  background-color: #6499BF;
+}
+.subsection-accordion .ui-accordion-content {
+  border-color: white #6499BF #6499BF;
+}
+
+.line {
+  height: 2px;
+  width: 100%;
+  background-color: black;
+}
+
